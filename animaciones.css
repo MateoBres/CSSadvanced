@@ -1,0 +1,86 @@
+/*
+
+
+animation : 
+
+animation-name : nombre del keyframe
+animation-duration : duracion total de 0 a 100 
+animation-delay : tiempo de espera antes que arranquen el keyframe(No funciona para repeticiones)
+animation-iteration-count : cuantas veces queremos repetir la animacion
+animation-timing-function : velocidad del cambio
+animation-direction : la sentido o direccion en que se lee el keyframe
+animation-filling-mode : como yo quiero que termine el elemento despues de la finalizacion de la animacion
+animation-play-state : el estado de la animacion
+*/
+
+
+div {
+    width: 100px;
+    height: 100px;
+    /* background-color: red; */
+    animation-name: animarColor;
+    animation-duration: 5s;
+    /* animation-delay: 5s; */
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+    animation-fill-mode: forwards;
+}
+
+
+/* div:hover {
+    animation-play-state: paused;
+}
+ */
+
+
+/*
+keyframes : Descripcion de cambios
+
+@keyframes <nombre> {
+
+}
+
+*/
+
+
+@keyframes animarColor {
+
+    /* 0% , 49% { background-color: transparent;} */
+    /* 0% === from */
+    /* 0% , 50% { background-color: red; } */
+    from { 
+        background-color: red; 
+    }
+
+    
+    /* 50% { background-color: red;} */
+
+    50% { 
+        transform: translateX(100px); 
+        background-color: blue; 
+    }
+
+    /* 25% , 80% { background-color: green;} */
+
+    /* 100% === to */
+    /* 100% { background-color: blue; } */
+    to { 
+        transform: translateX(100px) translateY(100px);
+        background-color: blue;
+     }
+
+}
+
+/* 
+@-webkit-keyframes animarColor {
+
+}
+
+@-moz-keyframes animarColor {
+
+}
+
+@-o-keyframes animarColor {
+    
+} 
+*/

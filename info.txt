@@ -1,0 +1,44 @@
+Algoritmo de Outline : https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines
+https://jsfiddle.net/dkaufmanjs/nq63nr6L/
+
+https://tympanus.net/
+https://tympanus.net/codrops/2013/12/12/progress-button-styles/
+https://cubic-bezier.com/
+
+
+Emmet : https://docs.emmet.io/cheat-sheet/
+
+
+https://animejs.com/
+http://flexboxgrid.com/
+https://animate.style/
+https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+
+
+
+header : titulares - barra de navegacion - logotipos  - ?
+
+footer : informacion de contacto - barras de navegacion - copyright - ?
+
+main : contenido central
+
+section : una nueva seccion del contenido central
+
+aside : contenido tangencial al contenido central
+
+article : contenido referente al contenido central - autocontenidos
+
+nav : links
+
+
+
+
+LESS - SASS - SCSS : Preprocesadores
+
+estilos.less -> procesador -> estilos.css
+
+https://marketplace.visualstudio.com/items?itemName=mrcrowl.easy-less
+http://koala-app.com/
+
+https://phaser.io/
+https://threejs.org/examples/?q=tab#css3d_periodictable

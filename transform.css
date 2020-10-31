@@ -1,0 +1,40 @@
+#transform {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: transform 0.3s ease;
+}
+
+#contenedor:hover #transform{
+    transform : rotateX(30deg);
+}
+
+/* 
+
+#contenedor:hover ~ #texto {
+    color : blue;
+} 
+
+
+#contenedor:hover + #texto {
+    color : blue;
+} 
+
+
+
+
+rotate
+translate
+skew
+scale
+
+*/
+
+
+/*
+
+padre hijo {}
+
+hijo:hover {}
+
+*/

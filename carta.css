@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#camara {
+    border: 3px dashed grey;
+    height: 300px;
+    width: 200px;
+    perspective: 700px;
+}
+
+#carta {
+    transform-style: preserve-3d;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+#camara:hover #carta{
+    transform: rotateY(180deg);
+}
+
+
+.lado {
+    position: absolute;
+    background-size: cover;
+}
+
+#carta , .lado {
+    height: 100%;
+    width: 100%;
+}
+
+#frente {
+    background-color: red;
+    background-image: url("./frente.jpg");
+}
+
+#reverso {
+    background-color: blue;
+    /* transform: rotateY(180deg) translateY(-100%); */
+    transform: rotateY(180deg);
+    background-image: url("./reverso.jpg");
+}

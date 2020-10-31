@@ -1,0 +1,57 @@
+/*variables*/
+@rojo : rgb(255, 0, 200);
+@colorSecundario : blue;
+
+
+body {
+    background-color: @rojo;
+    #reglasDeFondo();
+}
+
+section {
+    color: @rojo;
+    #reglasDeFondo();
+    /*anidamiento*/
+    @media screen and (min-width:700px) {
+        background-color: green;
+    }
+}
+
+
+/*mixins*/
+#reglasDeFondo() {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+p {
+
+    background-image: url("imagen.jpg");
+    #reglasDeFondo();
+
+
+    span {
+        text-decoration: overline;
+    }
+
+    &:focus {
+        color: green;
+    }
+
+    &:hover {
+        color: @colorSecundario
+    }
+
+    &::before {
+        content: "Hola";
+        color: @rojo;
+    }
+
+    @media screen and (min-width:700px) {
+        background-color: blue;
+    }
+}
+
+

@@ -1,0 +1,44 @@
+/*variables*/
+body {
+  background-color: #ff00c8;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section {
+  color: #ff00c8;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*anidamiento*/
+}
+@media screen and (min-width: 700px) {
+  section {
+    background-color: green;
+  }
+}
+/*mixins*/
+p {
+  background-image: url("imagen.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+p span {
+  text-decoration: overline;
+}
+p:focus {
+  color: green;
+}
+p:hover {
+  color: blue;
+}
+p::before {
+  content: "Hola";
+  color: #ff00c8;
+}
+@media screen and (min-width: 700px) {
+  p {
+    background-color: blue;
+  }
+}

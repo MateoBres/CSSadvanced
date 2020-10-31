@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .show-on-media {
+            display: none;
+        }
+
+        .cambiar {
+            color: red;
+            background-color: blue;
+            font-size: 50px;
+        }
+
+        /*@media <dispositivo>  [condiciones] {}*/
+
+        @media screen and (min-width : 700px){
+
+            .show-on-media {
+                display: block;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+
+        <p class="show-on-media">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sequi nesciunt voluptatum earum molestias corporis expedita repellendus aut nobis magnam deleniti, optio, sed debitis voluptatibus eos ab illum vel vero.
+        </p>
+        
+        <br>
+        <p>Hola Mundo</p>
+        <br>
+
+    </section>
+
+    <script>
+        //Agarro el p que ya esta
+        let show_on_media = document.querySelector(".show-on-media")
+        //Creo una etiqueta p
+        let p = document.createElement("p")
+        //Le pongo contenido
+        p.innerText = "Contenido Dinamico"
+
+        //Cada vez que la ventana del navegador cambia de tamaño
+        window.addEventListener("resize",()=>{
+            
+            let alto = window.innerHeight
+            let ancho = window.innerWidth
+
+            //console.log(`Nueva Medida : ${ancho}px / ${alto}px`)
+            if(ancho<=700){
+                document.body.appendChild(p)
+            }
+
+            if(ancho >= 900){
+                //show_on_media.style.color = "red"
+                //show_on_media.style.backgroundColor = "blue"
+                //show_on_media.style.fontSize = "50px"
+                show_on_media.classList.add("cambiar")
+            }
+
+        })
+
+    </script>
+
+</body>
+</html>

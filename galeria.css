@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#camara {
+    width: 400px;
+    height: 200px;
+    perspective: 700px;
+}
+
+#galeria , .cara {
+    width: 100%;
+    height: 100%;
+}
+
+
+#galeria {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+}
+
+.cara {
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* .cara:hover {
+    transform: scale(1.2);
+} */
+
+
+.cara > header , .cara > footer {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cara > footer a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+
+.cara > header {
+    color: white;
+    padding: 0.5rem;
+}
+
+
+#cara1 { 
+    background-color: rgba(255, 0, 0, 0.5);
+    background-image: url("./imagenes/fondo1.jpg");
+    transform: rotateY(0deg) translateZ(482px) ;
+}
+
+#cara2 {
+    background-color: rgba(0, 255, 0, 0.5);
+    background-image: url("./imagenes/fondo2.jpg");
+    transform: rotateY(45deg) translateZ(482px) ;
+}
+
+#cara3 {
+    background-color: rgba(0, 0, 255, 0.5);
+    background-image: url("./imagenes/fondo3.jpg");
+    transform: rotateY(90deg) translateZ(482px) ;
+}
+
+#cara4 {
+    background-color: rgba(255, 0, 255, 0.5);
+    background-image: url("./imagenes/fondo4.jpg");
+    transform: rotateY(135deg) translateZ(482px) ;
+}
+
+#cara5 {
+    background-color: rgba(255,255,0 , 0.5);
+    background-image: url("./imagenes/fondo5.jpg");
+    transform: rotateY(180deg) translateZ(482px) ;
+}
+
+#cara6 {
+    background-color: rgba(0,255,255 , 0.5);
+    background-image: url("./imagenes/fondo6.jpg");
+    transform: rotateY(225deg) translateZ(482px) ;
+}
+
+#cara7 {
+    background-color: rgba(150,255,150 , 0.5);
+    background-image: url("./imagenes/fondo7.jpg");
+    transform: rotateY(270deg) translateZ(482px) ;
+}
+
+#cara8 {
+    background-color: rgba(50,150,250 , 0.5);
+    background-image: url("./imagenes/fondo8.jpg");
+    transform: rotateY(315deg) translateZ(482px) ;
+}
+
+
+body > footer {
+    position: relative;
+    top: 400px;
+}
+
+body > footer button.material-icons { 
+    font-size: 50px;
+}
